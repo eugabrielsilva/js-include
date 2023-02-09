@@ -29,5 +29,10 @@ for (let file in includes.inc) {
 }
 ```
 
+### Checking files existence
+`__includeFile()` and `__includeDir()` **do not check for files existence**.
+
+If you want to check if a file exists before including it, and throw an error if not, use `__requireFile()` and `__requireDir()` equivalents.
+
 ### Credits
 Library developed and currently maintained by [Gabriel Silva](https://github.com/eugabrielsilva).
